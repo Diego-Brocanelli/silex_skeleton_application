@@ -1,0 +1,22 @@
+{
+    "name": "Diego-Brocanelli/silex_skeleton_application",
+    "description": "A Silex Skeleton application, for references in blog post.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego Brocanelli",
+            "email": "contato@diegobrocanelli.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "silex/silex": "~1.0",
+        "symfony/twig-bridge": "~2.3"
+    },
+    "autoload": {
+        "psr-4": { 
+            "App\\": "src/App/" 
+        }
+    }
+}
