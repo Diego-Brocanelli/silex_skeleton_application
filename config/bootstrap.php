@@ -17,6 +17,8 @@ $app['db.options'] = [
     'password' => 'database_password'
 ];
 
+//Configuration Twig
+$app->register(new TwigServiceProvider());
 $app['twig'] = $app->share($app->extend('twig', function ($twig, $app) {
     return $twig;
 }));
