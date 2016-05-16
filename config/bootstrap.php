@@ -18,7 +18,10 @@ $app['db.options'] = [
 ];
 
 //Configuration Twig
-$app->register(new TwigServiceProvider());
+$app->register(new TwigServiceProvider(), array(
+    'twig.path' => __DIR__.'/../templates',
+));
+
 $app['twig'] = $app->share($app->extend('twig', function ($twig, $app) {
     return $twig;
 }));
