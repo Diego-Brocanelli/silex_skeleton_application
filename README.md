@@ -66,6 +66,33 @@ server {
 }
 ```
 
+### Apache
+
+#### Vhost
+
+```
+<VirtualHost *:80>
+  DocumentRoot "/var/www/silexsandbox/web"
+  ServerName silexsandbox
+  <Directory "/var/www/silexsandbox/web">
+    AllowOverride All
+  </Directory>
+</VirtualHost>
+```
+
+#### .htaccess
+
+```
+# /web/.htaccess
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+```
+
 ### Servidor embutido
 
 #### Require PHP >= 5.4.0
