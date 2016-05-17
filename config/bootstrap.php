@@ -7,7 +7,6 @@ use Silex\Provider\TwigServiceProvider;
 
 $app = new Application();
 
-
 $app['db.options'] = [
     'driver'   => 'database_driver',
     'host'     => 'database_host',
@@ -17,7 +16,7 @@ $app['db.options'] = [
     'password' => 'database_password'
 ];
 
-//Configuration Twig
+//Configuration TwigServiceProvider
 $app->register(new TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../templates',
 ));

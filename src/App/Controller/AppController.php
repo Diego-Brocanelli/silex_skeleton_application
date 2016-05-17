@@ -2,13 +2,23 @@
 
 namespace App\Controller;
 
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Silex\Application;
 
+/**
+ * @author Diego Brocanelli <contato@diegobrocanelli.com.br>
+ */
 class AppController
 {
-    public function welcomeAction()
+    /**
+     * Render welcome view.
+     * 
+     * @param  Application $app Silex\Application
+     * @return Twig_Environment
+     */
+    public function welcomeAction(Application $app)
     {
-        return new Response('Hello World!');
+        return $app['twig']->render('welcome.html', array(
+            'content' => 'Hello World!'
+        ));
     }
 }
