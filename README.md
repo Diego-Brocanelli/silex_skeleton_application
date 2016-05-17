@@ -25,7 +25,7 @@
 
 # Configuração do servidor
 
-### NGinx
+### NGINX
 
 ```
 server {
