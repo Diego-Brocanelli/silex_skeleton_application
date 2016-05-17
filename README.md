@@ -30,7 +30,7 @@
 ```
 server {
     server_name domain.tld www.domain.tld;
-    root /var/www/project/web;
+    root /var/www/project/public;
 
     location / {
         # try to serve file directly, fallback to front controller
@@ -72,9 +72,9 @@ server {
 
 ```
 <VirtualHost *:80>
-  DocumentRoot "/var/www/silexsandbox/web"
+  DocumentRoot "/var/www/silexsandbox/public"
   ServerName silexsandbox
-  <Directory "/var/www/silexsandbox/web">
+  <Directory "/var/www/silexsandbox/public">
     AllowOverride All
   </Directory>
 </VirtualHost>
@@ -83,7 +83,7 @@ server {
 #### .htaccess
 
 ```
-# /web/.htaccess
+# /public/.htaccess
 <IfModule mod_rewrite.c>
     Options -MultiViews
 
