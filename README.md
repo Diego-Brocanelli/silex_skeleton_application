@@ -1,5 +1,5 @@
 # Silex Skeleton
-[Silex](silex.sensiolabs.org) é um micro framework craido por [Fabien Potencier](https://github.com/fabpot), mesmo criado do framework full stack [Symfony](https://symfony.com/).
+[Silex](silex.sensiolabs.org) é um micro framework criado por [Fabien Potencier](https://github.com/fabpot), mesmo criador do framework full stack [Symfony](https://symfony.com/).
 
 # Estrutura de diretórios
 
